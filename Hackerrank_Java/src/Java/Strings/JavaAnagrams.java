@@ -41,8 +41,8 @@ import java.util.TreeMap;
  *  Anagrams
  * </code></div>
  *
- * <h3>Explanation 0</h3>
- * <table style="border: 1px solid black; border-collapse: collapse;">
+ * <table style="border: 1px solid black; border-collapse: collapse;" >
+ * <caption>Explanation 0</caption>
  * <tr>
  * <th style="border: none;">Charater</th>
  * <th style="border: none;">Frequency: anagram</th>
@@ -67,8 +67,8 @@ import java.util.TreeMap;
  *  Not Anagrams
  * </code></div>
  *
- * <h3>Explanation 0</h3>
  * <table style="border: 1px solid black; border-collapse: collapse;">
+ * <caption>Explanation 1</caption>
  * <tr>
  * <th style="border: none;">Charater</th>
  * <th style="border: none;">Frequency: anagram</th>
@@ -94,14 +94,18 @@ import java.util.TreeMap;
  *  Anagrams
  * </code></div>
  *
- * <h3>Explanation 2</h3>
  * <table style="border: 1px solid black; border-collapse: collapse;">
+ * <caption>Explanation 2</caption>
  * <tr>
  * <th style="border: none;">Charater</th>
  * <th style="border: none;">Frequency: anagram</th>
  * <th style="border: none;">Frequency: margana</th>
  * </tr>
- * <tr style=" text-align: center;"><td>E or e</td><td>3</td><td>3</td></tr>
+ * <tr style=" text-align: center;">
+ * <td>E or e</td>
+ * <td>3</td>
+ * <td>3</td>
+ * </tr>
  * <tr style=" text-align: center;"><td>H or h</td><td>1</td><td>1</td></tr>
  * <tr style=" text-align: center;"><td>L or l</td><td>1</td><td>1</td></tr>
  * <tr style=" text-align: center;"><td>O or o</td><td>1</td><td>1</td></tr>
