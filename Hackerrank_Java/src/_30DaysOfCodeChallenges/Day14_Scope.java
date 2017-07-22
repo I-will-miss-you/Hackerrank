@@ -4,8 +4,8 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * <h3>Objective</h3>
- * Today we're discussing scope. Check out the
+ * <strong>Objective</strong>
+ * <br>Today we're discussing scope. Check out the
  * <a href="https://www.hackerrank.com/challenges/30-scope/tutorial"> Tutorial</a> tab for learning
  * materials and an instructional video!
  * <p>
@@ -36,7 +36,7 @@ import java.util.Scanner;
  * <h3>Constraints</h3>
  * <ul>
  * <li> 1 &le; N &le; 10
- * <li> 1 &le; <em>elements[i]</em> &le; 100, where <em>0 &le; i &le N -1</em>
+ * <li> 1 &le; <em>elements[i]</em> &le; 100, where <em>0 &le; i &le; N -1</em>
  * </ul>
  *
  * <h3>Outup Format</h3>
