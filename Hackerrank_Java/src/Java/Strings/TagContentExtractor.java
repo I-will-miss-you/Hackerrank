@@ -6,16 +6,17 @@ import java.util.regex.Pattern;
 
 /**
  * In a tag-based language like XML or HTML, contents are enclosed between a start tag and an end
- * tag like &lt;tag>contents&lt;/tag>. Note that the corresponding end tag starts with a /.
+ * tag like &lt;tag&gt;contents&lt;/tag&gt;. Note that the corresponding end tag starts with a /.
  * <p>
  * Given a string of text in a tag-based language, parse this text and retrieve the contents
  * enclosed within sequences of well-organized tags meeting the following criterion:
  * <ol>
  * <li> The name of the <em>start</em> and <em>end</em> tags must be same. The HTML code
- * &lt;h1>Hello World&lt;/h2> <em>is not valid</em>, because the text starts with an h1 tag and ends
- * with a non-matching h2 tag.
+ * &lt;h1&gt;Hello World&lt;/h2&gt; <em>is not valid</em>, because the text starts with an h1 tag
+ * and ends with a non-matching h2 tag.
  * <li> Tags can be nested, but content between nested tags is considered not valid. For example, in
- * &lt;h1>&lt;a>contents&lt;/a>invalid&lt;/h1>, contents is valid but invalid is not valid.
+ * &lt;h1&gt;&lt;a&gt;contents&lt;/a&gt;invalid&lt;/h1&gt;, contents is valid but invalid is not
+ * valid.
  * <li> Tags can consist of any printable characters.
  * </ol>
  *
@@ -38,10 +39,10 @@ import java.util.regex.Pattern;
  * <h3>Sample Input</h3>
  * <pre><code>
  *   4
- *  &lt;h1>Nayeem loves counseling&lt;/h1>
- *  &lt;h1>&lt;h1>Sanjay has no watch&lt;/h1>&lt;/h1>&lt;par>So wait for a while&lt;/par>
- *  &lt;Amee>safat codes like a ninja&lt;/amee>
- *  &lt;SA premium>Imtiaz has a secret crush&lt;/SA premium>
+ *  &lt;h1&gt;Nayeem loves counseling&lt;/h1&gt;
+ *  &lt;h1&gt;&lt;h1&gt;Sanjay has no watch&lt;/h1&gt;&lt;/h1&gt;&lt;par&gt;So wait for a while&lt;/par&gt;
+ *  &lt;Amee&gt;safat codes like a ninja&lt;/amee&gt;
+ *  &lt;SA premium&gt;Imtiaz has a secret crush&lt;/SA premium&gt;
  * </code></pre>
  *
  * <h3>Sample Output</h3>
