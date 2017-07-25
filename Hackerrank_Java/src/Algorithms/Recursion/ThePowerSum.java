@@ -9,17 +9,16 @@ import java.util.Scanner;
  */
 public class ThePowerSum {
 
-    public static int findPowerSum(int total, int power, int num) {
-        int value = (int) (total - pow(num, power));
+    public static int findPowerSum(int x, int n, int num) {
+        int value = (int) (x - pow(num, n));
 
         if (value < 0) {
             return 0;
-        } else if (value == 0) {
-            return 1;
-        } else {
-            return findPowerSum(value, power, num + 1)
-                    + findPowerSum(total, power, num + 1);
         }
+        if (value == 0) {
+            return 1;
+        }
+        return findPowerSum(value, n, num + 1) + findPowerSum(x, n, num + 1);
     }
 
     /**
@@ -27,9 +26,9 @@ public class ThePowerSum {
      */
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        int total = s.nextInt();
-        int power = s.nextInt();
-        System.out.println(findPowerSum(total, power, 1));
+        int x = s.nextInt();
+        int n = s.nextInt();
+        System.out.println(findPowerSum(x, n, 1));
     }
 
 }
